@@ -5,7 +5,7 @@ import { useSelector } from "react-redux";
 const Dashboard = () => {
   const auth = useSelector((state) => state.auth);
 
-  if (!auth.isAdmin) return <p>Access denied. Not an Admin!</p>;
+  if (!auth.isAdmin) return <p>Please Login again if you are an admin</p>;
 
   return (
     <StyledDashboard>
